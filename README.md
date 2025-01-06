@@ -1,2 +1,2 @@
 # shortcuts_tray
-A straightforward shortcuts tray application designed to execute Python code or CMD commands with a left-click on the icon. It also allows you to add, remove, or edit shortcuts.
+A simple tray application to quickly run Python code or CMD commands with a left-click. The right-click menu lets you add, edit, remove shortcuts, or set a default action.
