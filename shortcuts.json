@@ -1,0 +1,17 @@
+{
+    "Open Notepad": {
+        "command": "notepad.exe",
+        "is_python": false,
+        "is_default": false
+    },
+    "Take Screenshot": {
+        "command": "import pyautogui\npyautogui.hotkey('win', 'shift', 's')",
+        "is_python": true,
+        "is_default": true
+    },
+    "build": {
+        "command": "pyinstaller main.py --icon=icon.ico --collect-all customtkinter,pynput,pyautogui,pillow  --noconsole --hiddenimport pyautogui",
+        "is_python": false,
+        "is_default": false
+    }
+}
