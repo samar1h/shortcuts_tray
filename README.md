@@ -23,8 +23,7 @@
    - [Clear Windows Temp](#13-clear-windows-temp)  
    - [Restart](#14-restart)  
    - [Lock Computer](#15-lock-computer)  
-   - [Kill Chrome](#16-kill-chrome)  
-
+   - [Kill Chrome](#16-kill-chrome)
 ---
 
 ## **Useful Shortcuts**
@@ -240,6 +239,11 @@ ctypes.windll.user32.LockWorkStation()
 import os
 os.system('taskkill /f /im chrome.exe')
 ```
+
+---
+
+### Icon Credit
+<a href="https://www.flaticon.com/free-icons/shortcut" title="shortcut icons">Shortcut icons created by Freepik - Flaticon</a>
 
 
 [GO UP...](#top)
