@@ -243,4 +243,4 @@ os.system('taskkill /f /im chrome.exe')
 ```
 
 
-[GO UP...](#-Shortcuts-Tray)
+[GO UP...](#-shortcuts-tray)
