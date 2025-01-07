@@ -1,10 +1,34 @@
 
 # Shortcuts Tray
+
 > A simple tray application to quickly run Python code or CMD commands with a left-click. The right-click menu lets you add, edit, remove shortcuts, or set a default action.
 
+---
 
+## **Table of Contents**
 
-## Usefull Shortcuts
+1. **Introduction**  
+   - Overview of the Shortcuts Tray
+
+2. **Useful Shortcuts**
+   - [Open Notepad](#1-open-notepad)  
+   - [Take Screenshot](#2-take-screenshot)  
+   - [Save Clipboard to Desktop](#3-save-clipboard-to-desktop)  
+   - [Empty Recycle Bin](#4-empty-recycle-bin)  
+   - [Create New Text File on Desktop](#5-create-new-text-file-on-desktop)  
+   - [Battery Status](#8-battery-status)  
+   - [System Stats](#9-system-stats)  
+   - [Volume Up](#10-volume-up)  
+   - [Quick Create and Open Text File](#11-quick-create-and-open-text-file)  
+   - [Available WiFi Networks](#12-available-wifi-networks)  
+   - [Clear Windows Temp](#13-clear-windows-temp)  
+   - [Restart](#14-restart)  
+   - [Lock Computer](#15-lock-computer)  
+   - [Kill Chrome](#16-kill-chrome)  
+
+---
+
+## **Useful Shortcuts**
 
 ### 1. **Open Notepad**  
 **Description**: Opens the Windows Notepad application.  
@@ -148,4 +172,72 @@ def create_and_open_file():
 
 if __name__ == "__main__":
     create_and_open_file()
+```
+
+---
+
+### 12. **Available WiFi Networks**  
+**Description**: Shows Available WiFi Networks.  
+**Code**:  
+```python
+import subprocess
+import pyautogui
+
+output = subprocess.check_output(['netsh', 'wlan', 'show', 'network']).decode('utf-8')
+pyautogui.alert(output, 'Available WiFi Networks')
+```
+
+---
+
+### 13. **Clear Windows Temp**  
+**Description**: Clears temp storage.  
+**Code**:  
+```python
+import os
+import shutil
+import pyautogui
+
+temp_dir = os.environ.get('TEMP')
+try:
+    for item in os.listdir(temp_dir):
+        item_path = os.path.join(temp_dir, item)
+        try:
+            if os.path.isfile(item_path):
+                os.unlink(item_path)
+            elif os.path.isdir(item_path):
+                shutil.rmtree(item_path)
+        except:
+            continue
+    pyautogui.alert('Temp files cleared!', 'Success')
+except Exception as e:
+    pyautogui.alert(f'Error: {str(e)}', 'Error')
+```
+
+---
+
+### 14. **Restart**  
+**Description**: Restarts computer.  
+**Code**:  
+```bash
+shutdown /r /t 0
+```
+
+---
+
+### 15. **Lock Computer**  
+**Description**: Logs out current user.  
+**Code**:  
+```python
+import ctypes
+ctypes.windll.user32.LockWorkStation()
+```
+
+---
+
+### 16. **Kill Chrome**  
+**Description**: Kills Chrome process.  
+**Code**:  
+```python
+import os
+os.system('taskkill /f /im chrome.exe')
 ```
