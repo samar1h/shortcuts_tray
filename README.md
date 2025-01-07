@@ -4,11 +4,7 @@ A simple tray application to quickly run Python code or CMD commands with a left
 ---
 
 ## **Table of Contents**
-
-1. **Introduction**  
-   - Overview of the Shortcuts Tray
-
-2. **Useful Shortcuts**
+- **Useful Shortcuts**
    - [Open Notepad](#1-open-notepad)  
    - [Take Screenshot](#2-take-screenshot)  
    - [Save Clipboard to Desktop](#3-save-clipboard-to-desktop)  
@@ -23,7 +19,7 @@ A simple tray application to quickly run Python code or CMD commands with a left
    - [Restart](#14-restart)  
    - [Lock Computer](#15-lock-computer)  
    - [Kill Chrome](#16-kill-chrome)
-3. [Credit Section](#credit-section)
+- **Credit Section**[🔗](#credit-section)
 ---
 
 ## **Useful Shortcuts**
