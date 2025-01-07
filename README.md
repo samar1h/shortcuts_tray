@@ -241,3 +241,6 @@ ctypes.windll.user32.LockWorkStation()
 import os
 os.system('taskkill /f /im chrome.exe')
 ```
+
+
+[GO UP...](#-Shortcuts-Tray)
