@@ -24,6 +24,7 @@
    - [Restart](#14-restart)  
    - [Lock Computer](#15-lock-computer)  
    - [Kill Chrome](#16-kill-chrome)
+3. [Credit Section](#credit-section)
 ---
 
 ## **Useful Shortcuts**
@@ -245,5 +246,6 @@ os.system('taskkill /f /im chrome.exe')
 ### Credit Section
 - <a href="https://www.flaticon.com/free-icon/shortcut-script-app_3884552?term=shortcut&page=1&position=6&origin=search&related_id=3884552">Shortcut icon</a> created by <a href="https://www.flaticon.com/free-icons/shortcut" title="shortcut icons">Freepik - Flaticon</a>
 
+---
 
 [GO UP...](#top)
